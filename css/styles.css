@@ -1,0 +1,202 @@
+/* =========
+Global Styling
+* font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+* bg.png file for background
+========= */
+body {
+	background: url("../img/bg.png");
+	color: #333;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	font-size: 100%;
+}
+
+p {
+ 	line-height: 24px;
+ 	font-size: 1em;
+}
+
+header img {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* =========
+Blockquote
+* color #e44d26
+* font size 2em
+* font style italic
+* letter spacing 1px
+* text aligned center
+========= */
+blockquote {
+	color: #e44d26;
+	font-size: 2em;
+	font-style: italic;
+	letter-spacing: 1px;
+	text-align: center; 
+}
+
+/* =========
+Navigation
+* List Items - Navigation provided
+
+Anchor Links
+* padding: 10px 10px 10px 40px;
+* color on hover #E44D26
+========= */
+nav li {
+	float: left;
+	list-style: none;
+	margin: 0 10px 0 10px;
+}
+
+/* Base link styling */
+nav a:link, 
+nav a:visited {
+	color: #333;
+	padding: 10px 10px 10px 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav a:hover, 
+nav a:active {
+	color: #E44D26;
+}
+
+/* on hover show home.png */
+#home a:hover {
+	background: url("../img/icons/home.png") no-repeat left center;
+}
+
+/* on hover show home.png */
+#super a:hover {
+	background: url("../img/icons/super.png") no-repeat left center;
+}
+
+/* on hover show home.png */
+#html5 a:hover {
+	background: url("../img/icons/html5.png") no-repeat left center;
+}
+
+/* =========
+Super Friends
+* font-family: 'Open Sans', sans-serif;
+* text-indent: 32px;
+* line-height: 24px;
+========= */
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25em; /* 20px / 16px */
+}
+
+article img {
+	border: 10px solid #fff;
+	width: 100%;
+	max-width: 100%;
+}
+
+img + p {
+	text-indent: 32px;
+}
+
+/* =========
+Footer
+* arial font for paragraphs
+========= */
+footer p {
+	font: 0.625em/1em 'arial', sans-serif; /* 10px / 16px */
+}
+
+/* =========
+Media Queries
+========= */
+
+/* ========= Large Desktop ========= */
+@media screen and (min-width: 1000px) {
+	body {
+		background: purple;
+	}
+}
+
+/* ========= Standard Desktop ========= */
+@media screen and (max-width: 1000px) {
+	body {
+		background: green;
+	}
+}
+
+/* ========= Tablet ========= */
+
+@media screen and (max-width: 800px) {
+	body {
+		background: blue;
+	}
+
+	header img {
+		width: 75%;
+	}
+
+	nav li {
+		margin: 2% 0;
+	}
+
+	blockquote {
+		font-size: 1.5em;
+	}
+
+	article.grid_12 section {
+		width: 48%;
+	}
+
+	article.grid_12 p {
+		text-align: left;
+	}
+
+	section img {
+		width: 65%;
+	}
+
+	footer p.grid_6 {
+		float: none;
+		width: 100%;
+		font-size: 0.5em;
+	}
+}
+
+/* ========= Mobile ========= */
+
+@media screen and (max-width: 480px) {
+	body {
+		background: orange;
+	}
+
+	nav li {
+		margin: 2% 0;
+	}
+
+	blockquote {
+		font-size: 1em;
+	}
+
+	article.grid_12 section {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	article.grid_12 p {
+		text-align: left;
+	}
+
+	section img {
+		width: 50%;
+	}
+
+	footer p.grid_6 {
+		float: none;
+		width: 100%;
+		font-size: 1em;
+	}
+}
+
